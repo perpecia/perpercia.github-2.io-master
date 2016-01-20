@@ -1,0 +1,34 @@
+tml,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wantstofly {
+    background: #dad;
+    width: 77px;
+    height: 77px;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    animation-name: flyingaround;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: -100px -100px;
+    
+}
+
+@keyframes flyingaround {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+    
+    50%{
+        transform: rotate(180deg) scale(0.5); 
+        
+    }
+    100% {
+        transform: rotate(360deg) scale(1); 
+    }
+}
